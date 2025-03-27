@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付 - VapeLife</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">VapeLife</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html">产品</a></li>
+                <li><a href="cart.html">购物车</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="payment-page">
+        <h1>支付订单</h1>
+        
+        <div class="payment-container">
+            <div class="order-summary">
+                <h2>订单信息</h2>
+                <div class="order-items">
+                    <div class="order-item">
+                        <img src="images/product1.jpg" alt="VapeLife Pro">
+                        <div class="item-info">
+                            <h3>VapeLife Pro</h3>
+                            <p>专业级电子烟设备</p>
+                            <div class="item-price">¥999</div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="images/product2.jpg" alt="VapeLife Mini">
+                        <div class="item-info">
+                            <h3>VapeLife Mini</h3>
+                            <p>便携式电子烟</p>
+                            <div class="item-price">¥699</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-total">
+                    <div class="total-item">
+                        <span>商品总额</span>
+                        <span>¥1,698</span>
+                    </div>
+                    <div class="total-item">
+                        <span>运费</span>
+                        <span>¥0</span>
+                    </div>
+                    <div class="total-item final">
+                        <span>应付总额</span>
+                        <span>¥1,698</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <h2>选择支付方式</h2>
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <input type="radio" id="alipay" name="payment" value="alipay" checked>
+                        <label for="alipay">
+                            <img src="images/alipay.png" alt="支付宝">
+                            <span>支付宝</span>
+                        </label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="wechat" name="payment" value="wechat">
+                        <label for="wechat">
+                            <img src="images/wechat.png" alt="微信支付">
+                            <span>微信支付</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="payment-form">
+                    <div class="form-group">
+                        <label for="name">收货人姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">联系电话</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">收货地址</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="note">备注信息</label>
+                        <textarea id="note" name="note" rows="2"></textarea>
+                    </div>
+                </div>
+
+                <button class="pay-btn">立即支付</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>VapeLife 致力于为您提供最优质的电子烟产品</p>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <p>电话：400-888-8888</p>
+                <p>邮箱：support@vapelife.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VapeLife. 保留所有权利。</p>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车 - VapeLife</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">VapeLife</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html">产品</a></li>
+                <li><a href="cart.html">购物车</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="cart-page">
+        <h1>购物车</h1>
+        
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="images/product1.jpg" alt="VapeLife Pro">
+                    <div class="item-details">
+                        <h3>VapeLife Pro</h3>
+                        <p>专业级电子烟设备</p>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                    <div class="item-price">¥999</div>
+                    <button class="remove-item">×</button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="images/product2.jpg" alt="VapeLife Mini">
+                    <div class="item-details">
+                        <h3>VapeLife Mini</h3>
+                        <p>便携式电子烟</p>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                    <div class="item-price">¥699</div>
+                    <button class="remove-item">×</button>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>订单摘要</h2>
+                <div class="summary-item">
+                    <span>商品总额</span>
+                    <span>¥1,698</span>
+                </div>
+                <div class="summary-item">
+                    <span>运费</span>
+                    <span>¥0</span>
+                </div>
+                <div class="summary-item total">
+                    <span>总计</span>
+                    <span>¥1,698</span>
+                </div>
+                <button class="checkout-btn">结算</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>VapeLife 致力于为您提供最优质的电子烟产品</p>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <p>电话：400-888-8888</p>
+                <p>邮箱：support@vapelife.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <div class="social-links">
+                    <a href="#">微信</a>
+                    <a href="#">微博</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VapeLife. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html> 
